@@ -259,10 +259,10 @@ export default function WeddingPage() {
       <section id="snoubenci" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Rádi bychom vás přivítali na našem svatebním webu, kde naleznete ty nejdůležitější informace k našemu významnému dni. Už se na vás všechny moc těšíme!</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Snoubenci</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Snoubenci
+              Rádi bychom vás přivítali na našem svatebním webu, kde naleznete ty nejdůležitější informace k našemu významnému dni. Už se na vás všechny moc těšíme!
             </p>
           </div>
 
@@ -655,21 +655,16 @@ export default function WeddingPage() {
               </div>
 
               {/* Obsah banneru */}
-              <div className="relative z-10 p-12 md:p-16 text-white">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  {/* Levá strana - text */}
-                  <div>
-                    <h3 className="text-3xl md:text-4xl font-serif font-light mb-8 tracking-wide">
-                      Místo našich snů
-                    </h3>
-                    <div className="space-y-6 text-lg leading-relaxed">
-                      <p className="opacity-90">
-                        Toto místo jsme objevili náhodou. Míša sem vzal Aničku na narozeninový pobyt a při té příležitosti jsme zjistili, že tu dělají i svatby. Domluvili jsme se tedy přímo na místě na ukázku svatebních prostor. Okouzlila nás historická sýpka, stylové ubytování pro svatebčany a špičková gastronomie, která je pro nás jedno z hlavních kriterií. Do místa jsme se zamilovali, dál už nic nehledali a za pár měsíců podepsali rezervační smlouvu a začali řešit náš vysněný den D.
-                      </p>
-                    </div>
+              <div className="relative z-10 p-12 md:p-16 text-white text-center">
+                <div className="max-w-4xl mx-auto">
+                  <h3 className="text-3xl md:text-4xl font-serif font-light mb-8 tracking-wide">
+                    Místo našich snů
+                  </h3>
+                  <div className="space-y-6 text-lg leading-relaxed">
+                    <p className="opacity-90">
+                      Toto místo jsme objevili náhodou. Míša sem vzal Aničku na narozeninový pobyt a při té příležitosti jsme zjistili, že tu dělají i svatby. Domluvili jsme se tedy přímo na místě na ukázku svatebních prostor. Okouzlila nás historická sýpka, stylové ubytování pro svatebčany a špičková gastronomie, která je pro nás jedno z hlavních kriterií. Do místa jsme se zamilovali, dál už nic nehledali a za pár měsíců podepsali rezervační smlouvu a začali řešit náš vysněný den D.
+                    </p>
                   </div>
-
-
                 </div>
               </div>
             </div>
