@@ -259,10 +259,10 @@ export default function WeddingPage() {
       <section id="snoubenci" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Snoubenci</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Rádi bychom vás přivítali na našem svatebním webu, kde naleznete ty nejdůležitější informace k našemu významnému dni. Už se na vás všechny moc těšíme!</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Rádi bychom vás přivítali na našem svatebním webu, kde naleznete ty nejdůležitější informace k našemu významnému dni. Už se na vás všechny moc těšíme!
+              Snoubenci
             </p>
           </div>
 
@@ -271,7 +271,7 @@ export default function WeddingPage() {
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/anicka2.jpg"
+                  src="/anicka3.jpg"
                   alt="Anna"
                   fill
                   className="object-cover object-[center_0%]"
@@ -311,7 +311,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Galerie</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Chronologická cesta našeho vztahu - od prvního setkání až po zásnuby. Každá fotka vypráví příběh našich společných &quot;prvních&quot;.
+              Chronologická cesta našeho vztahu - od prvního setkání až po zásnuby. Každá fotka vypráví příběh toho, co jsme zažili &quot;poprvé&quot;.
             </p>
           </div>
 
@@ -585,7 +585,7 @@ export default function WeddingPage() {
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
-                <p className="text-white text-sm font-semibold">naše budoucnost</p>
+                <p className="text-white text-sm font-semibold">jsme kompletní</p>
               </div>
             </div>
           </div>
@@ -669,42 +669,7 @@ export default function WeddingPage() {
                     </div>
                   </div>
 
-                  {/* Pravá strana - ikony a detaily */}
-                  <div className="space-y-8">
-                    <div className="grid grid-cols-2 gap-6">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <Building2 className="w-8 h-8 text-white" />
-                        </div>
-                        <h4 className="font-medium mb-2">Historická sýpka</h4>
-                        <p className="text-sm opacity-80">Stylový prostor pro obřad</p>
-                      </div>
 
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <TreePine className="w-8 h-8 text-white" />
-                        </div>
-                        <h4 className="font-medium mb-2">Zahrada s rybníkem</h4>
-                        <p className="text-sm opacity-80">Romantické prostředí</p>
-                      </div>
-
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <Utensils className="w-8 h-8 text-white" />
-                        </div>
-                        <h4 className="font-medium mb-2">Svatební hostina</h4>
-                        <p className="text-sm opacity-80">Exkluzivní gastronomie</p>
-                      </div>
-
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <Home className="w-8 h-8 text-white" />
-                        </div>
-                        <h4 className="font-medium mb-2">Ubytování</h4>
-                        <p className="text-sm opacity-80">Pokoje a apartmá</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -729,7 +694,7 @@ export default function WeddingPage() {
                 <div className="p-6">
                   <h4 className="text-xl font-light text-stone-900 mb-3">Wellness</h4>
                   <p className="text-stone-600 mb-4 text-sm">
-                    Luxusní pokoj s vlastní wellness zónou, ideální pro relaxaci po svatbě.
+                    Luxusní pokoj s vlastní wellness zónou, ideální pro relaxaci před svatbou.
                   </p>
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-medium text-stone-900">3 700 Kč</span>
@@ -785,11 +750,11 @@ export default function WeddingPage() {
               </div>
             </div>
 
-            <div className="bg-stone-100 rounded-2xl p-6 text-center">
-              <p className="text-stone-700 mb-2">
+            <div className="bg-stone-800 rounded-2xl p-6 text-center">
+              <p className="text-white mb-2">
                 <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
               </p>
-              <p className="text-sm text-stone-600">
+              <p className="text-sm text-white/80">
                 Ceny se liší podle počtu lůžek. Pro rezervaci nás kontaktujte.
               </p>
             </div>
@@ -813,47 +778,13 @@ export default function WeddingPage() {
               </div>
             </div>
 
-            {/* Navigační karty */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="rounded-2xl p-6 text-white" style={{ backgroundColor: '#8b6f47' }}>
-                <div className="flex items-center gap-3 mb-4">
-                  <Car className="w-6 h-6" />
-                  <h4 className="text-lg font-light">Z Prahy</h4>
-                </div>
-                <p className="text-sm opacity-90 leading-relaxed mb-2">
-                  Směr Mělník po silnici I/9, odbočka v Odoleně Vodě na Předboj.
-                </p>
-                <p className="text-sm font-medium">Cca 30 minut</p>
-              </div>
 
-              <div className="rounded-2xl p-6 text-white" style={{ backgroundColor: '#1f4f3f' }}>
-                <div className="flex items-center gap-3 mb-4">
-                  <Car className="w-6 h-6" />
-                  <h4 className="text-lg font-light">Parkování</h4>
-                </div>
-                <p className="text-sm opacity-90 leading-relaxed mb-2">
-                  Dostatek parkovacích míst přímo na místě pro všechny svatební hosty.
-                </p>
-                <p className="text-sm font-medium">Zdarma</p>
-              </div>
-
-              <div className="rounded-2xl p-6 text-white" style={{ backgroundColor: '#6b6b6b' }}>
-                <div className="flex items-center gap-3 mb-4">
-                  <NavigationIcon className="w-6 h-6" />
-                  <h4 className="text-lg font-light">Veřejná doprava</h4>
-                </div>
-                <p className="text-sm opacity-90 leading-relaxed mb-2">
-                  Autobus do Odoleny Vody, pak místní doprava nebo taxi.
-                </p>
-                <p className="text-sm font-medium">Doporučujeme odvoz</p>
-              </div>
-            </div>
           </div>
 
           {/* Parkoviště */}
           <div className="mb-16">
-            <div className="bg-stone-100 rounded-2xl p-8 mb-8">
-              <p className="text-stone-700 leading-relaxed text-center">
+            <div className="bg-stone-800 rounded-2xl p-8 mb-8">
+              <p className="text-white leading-relaxed text-center">
                 Přímo v areálu je vyhrazené parkoviště pouze pro svatebčany a také vlastní vjezd.
                 Parkování je bezplatné a míst je dostatek. Jak se na parkoviště dostat můžete podrobně vidět na mapce níže:
               </p>
@@ -911,41 +842,41 @@ export default function WeddingPage() {
           </div>
 
           {/* Program list */}
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Kanapky + welcome drink</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Svatební obřad</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Skupinové focení</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Přípitek + proslovy</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Krájení dortu</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Focení novomanželů + ubytování hostů</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">První tanec</h3>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
               </div>
@@ -953,7 +884,7 @@ export default function WeddingPage() {
 
             <div className="mt-12 text-center">
               <p className="text-lg text-stone-600 italic">
-                Mimo to se můžete těšit i na spoustu dalších překvapení, které si zatím necháme pro sebe :)
+                Mimo to pro Vás chystáme i spoustu dalších překvapení, které si zatím necháme pro sebe :)
               </p>
             </div>
           </div>
