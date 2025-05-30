@@ -1,13 +1,6 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "framework": "nextjs",
   "regions": ["fra1"],
-  "functions": {
-    "src/app/**/*.tsx": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
