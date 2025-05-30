@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Calendar, MapPin, Clock, Heart, Users, Gift, Car, Utensils, Home, ExternalLink, Navigation as NavigationIcon, TreePine, Building2, Phone, Mail } from "lucide-react";
+import { MapPin, Heart, Gift, Car, Utensils, Home, ExternalLink, Navigation as NavigationIcon, TreePine, Building2, Phone, Mail } from "lucide-react";
 
 // Komponenta pro padající sníh s více vločkami
 const FallingSnow = () => {
@@ -311,7 +311,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Galerie</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Chronologická cesta našeho vztahu - od prvního setkání až po zásnuby. Každá fotka vypráví příběh našich společných "prvních".
+              Chronologická cesta našeho vztahu - od prvního setkání až po zásnuby. Každá fotka vypráví příběh našich společných &quot;prvních&quot;.
             </p>
           </div>
 
@@ -821,7 +821,7 @@ export default function WeddingPage() {
                 <div className="flex-1">
                   <h3 className="text-xl font-serif font-light text-stone-900 mb-2">Svatební obřad</h3>
                   <p className="text-stone-600">
-                    Svatební ceremonie v krásném prostředí Yard Resort. Přivítání hostů a slavnostní "ANO".
+                    Svatební ceremonie v krásném prostředí Yard Resort. Přivítání hostů a slavnostní &quot;ANO&quot;.
                   </p>
                 </div>
               </div>
