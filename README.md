@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Svatební web Anička + Míša 💍
 
-## Getting Started
+Moderní svatební web vytvořený v Next.js pro svatbu Aničky a Míši, která se koná 24. ledna 2026 v Yard Resort, Předboj.
 
-First, run the development server:
+## ✨ Funkce
+
+- **Úvodní stránka** s animovaným sněžením a odpočtem do svatby
+- **Interaktivní formulář** pro potvrzení účasti
+- **Responzivní design** optimalizovaný pro všechna zařízení
+- **Moderní animace** pomocí Framer Motion
+- **Zimní téma** s elegantním designem
+
+## 🚀 Spuštění projektu
+
+### Lokální vývoj
 
 ```bash
+# Instalace závislostí
+npm install
+
+# Spuštění vývojového serveru
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Otevřete [http://localhost:3000](http://localhost:3000) v prohlížeči.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Produkční build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Vytvoření produkční verze
+npm run build
 
-## Learn More
+# Spuštění produkční verze
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Struktura projektu
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── page.tsx          # Úvodní stránka se sněžením
+│   ├── svatba/
+│   │   └── page.tsx      # Hlavní svatební stránka
+│   ├── layout.tsx        # Hlavní layout
+│   └── globals.css       # Globální styly
+└── public/
+    ├── Lilien-newborn-30.jpg  # Hlavní fotka
+    └── IMG_1741.jpg           # Další fotka
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design
 
-## Deploy on Vercel
+- **Fonty**: Playfair Display (serif) + Inter (sans-serif)
+- **Barvy**: Zimní paleta - modrá, zelená, zlatá, stříbrná
+- **Animace**: Sněžení, plynulé přechody, hover efekty
+- **Responzivní**: Optimalizováno pro mobily, tablety i desktop
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Sekce webu
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Úvodní stránka** - Sněžení, odpočet, základní info
+2. **Program dne** - Časový harmonogram a doprovodný program
+3. **Potvrzení účasti** - Formulář s dietními omezeními
+4. **Důležité detaily** - Dress code, dárky, ubytování, mapa
+5. **O nás** - Příběh páru a fotogalerie
+6. **Praktické věci** - Playlist, kontakty
+
+## 🚀 Deployment na Vercel
+
+1. Pushněte kód na GitHub
+2. Připojte repository na [Vercel](https://vercel.com)
+3. Vercel automaticky nasadí web na produkční URL
+
+## 🛠️ Technologie
+
+- **Next.js 15** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS
+- **Framer Motion** - Animace
+- **Lucide React** - Ikony
+
+## 📝 Customizace
+
+### Změna obsahu
+- Upravte texty v `src/app/svatba/page.tsx`
+- Přidejte vlastní fotky do `public/` složky
+- Upravte barvy v Tailwind třídách
+
+### Přidání nových sekcí
+- Vytvořte novou komponentu v `svatba/page.tsx`
+- Přidejte ji do navigace v `sections` array
+
+## 💡 Tipy
+
+- Obrázky optimalizujte před nahráním (WebP formát)
+- Testujte na různých zařízeních
+- Použijte Google Analytics pro sledování návštěvnosti
+
+## 📞 Podpora
+
+Pro technické dotazy kontaktujte vývojáře nebo vytvořte issue na GitHubu.
+
+---
+
+Vytvořeno s ❤️ pro Aničku a Míšu
