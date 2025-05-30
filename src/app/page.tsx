@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MapPin, Heart, Gift, Car, Utensils, Home, ExternalLink, Navigation as NavigationIcon, TreePine, Building2, Phone, Mail } from "lucide-react";
+import { MapPin, Heart, Gift, ExternalLink, Phone, Mail } from "lucide-react";
 
 // Komponenta pro padající sníh s více vločkami
 const FallingSnow = () => {
