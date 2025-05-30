@@ -271,7 +271,7 @@ export default function WeddingPage() {
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/anicka.jpg"
+                  src="/anicka2.jpg"
                   alt="Anna"
                   fill
                   className="object-cover object-[center_0%]"
@@ -315,8 +315,8 @@ export default function WeddingPage() {
             </p>
           </div>
 
-          {/* Chronologická fotogalerie 3x5 grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Chronologická fotogalerie 4x4 grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Foto 1 - první kamarádská fotka */}
             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="aspect-[3/3] relative">
@@ -325,11 +325,11 @@ export default function WeddingPage() {
                   alt="první kamarádská fotka"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první kamarádská fotka</p>
               </div>
             </div>
@@ -342,11 +342,11 @@ export default function WeddingPage() {
                   alt="první Halloween"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první Halloween</p>
               </div>
             </div>
@@ -359,11 +359,11 @@ export default function WeddingPage() {
                   alt="první vánoční večírek"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první vánoční večírek</p>
               </div>
             </div>
@@ -376,11 +376,11 @@ export default function WeddingPage() {
                   alt="první fotka jako pár"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první fotka jako pár</p>
               </div>
             </div>
@@ -393,11 +393,11 @@ export default function WeddingPage() {
                   alt="první KVIFF"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první KVIFF</p>
               </div>
             </div>
@@ -410,11 +410,11 @@ export default function WeddingPage() {
                   alt="první svatbování"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první svatbování</p>
               </div>
             </div>
@@ -427,11 +427,11 @@ export default function WeddingPage() {
                   alt="první lanka"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první lanka</p>
               </div>
             </div>
@@ -444,11 +444,11 @@ export default function WeddingPage() {
                   alt="první výlet za hranice"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první výlet za hranice</p>
               </div>
             </div>
@@ -461,11 +461,11 @@ export default function WeddingPage() {
                   alt="první dovolená"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první dovolená</p>
               </div>
             </div>
@@ -478,11 +478,11 @@ export default function WeddingPage() {
                   alt="první bruslení"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první bruslení</p>
               </div>
             </div>
@@ -495,11 +495,11 @@ export default function WeddingPage() {
                   alt="první Vánoce"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první Vánoce</p>
               </div>
             </div>
@@ -512,11 +512,11 @@ export default function WeddingPage() {
                   alt="první Silvestr"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">první Silvestr</p>
               </div>
             </div>
@@ -529,11 +529,11 @@ export default function WeddingPage() {
                   alt="budeme tři"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">budeme tři</p>
               </div>
             </div>
@@ -546,11 +546,11 @@ export default function WeddingPage() {
                   alt="je to holčička"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">je to holčička</p>
               </div>
             </div>
@@ -563,12 +563,29 @@ export default function WeddingPage() {
                   alt="řekla ANO"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
                 <p className="text-white text-sm font-semibold">řekla ANO</p>
+              </div>
+            </div>
+
+            {/* Foto 16 - nová fotka */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="aspect-[3/3] relative">
+                <Image
+                  src="/fotky-chronologicky/16.jpg"
+                  alt="naše budoucnost"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+              <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 text-center">
+                <p className="text-white text-sm font-semibold">naše budoucnost</p>
               </div>
             </div>
           </div>
@@ -626,9 +643,8 @@ export default function WeddingPage() {
           {/* Hlavní banner s informacemi */}
           <div className="relative mb-16">
             <div
-              className="relative rounded-3xl overflow-hidden shadow-2xl"
+              className="relative rounded-3xl overflow-hidden shadow-2xl bg-stone-800"
               style={{
-                background: `linear-gradient(135deg, #1f4f3f 0%, #4a3429 50%, #8b6f47 100%)`,
                 minHeight: '400px'
               }}
             >
@@ -649,16 +665,7 @@ export default function WeddingPage() {
                     </h3>
                     <div className="space-y-6 text-lg leading-relaxed">
                       <p className="opacity-90">
-                        Historická sýpka v kombinaci dřeva a kamene vytváří jedinečnou atmosféru
-                        pro svatební obřad i hostinu.
-                      </p>
-                      <p className="opacity-90">
-                        Romantická zahrada s rybníkem, kde nevěsta přichází přes kouzelný můstek,
-                        obklopená letitými stromy.
-                      </p>
-                      <p className="opacity-90">
-                        Kapacita až 150 hostů s možností ubytování přímo na místě
-                        a dostatkem parkovacích míst zdarma.
+                        Toto místo jsme objevili náhodou. Míša sem vzal Aničku na narozeninový pobyt a při té příležitosti jsme zjistili, že tu dělají i svatby. Domluvili jsme se tedy přímo na místě na ukázku svatebních prostor. Okouzlila nás historická sýpka, stylové ubytování pro svatebčany a špičková gastronomie, která je pro nás jedno z hlavních kriterií. Do místa jsme se zamilovali, dál už nic nehledali a za pár měsíců podepsali rezervační smlouvu a začali řešit náš vysněný den D.
                       </p>
                     </div>
                   </div>
@@ -704,9 +711,94 @@ export default function WeddingPage() {
             </div>
           </div>
 
-          {/* Jak se dostat */}
+          {/* Ubytování */}
           <div className="mb-16">
-            <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Jak se dostat</h3>
+            <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Ubytování</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {/* Wellness pokoj */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/Yard/wellness.jpg"
+                    alt="Wellness pokoj"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-light text-stone-900 mb-3">Wellness</h4>
+                  <p className="text-stone-600 mb-4 text-sm">
+                    Luxusní pokoj s vlastní wellness zónou, ideální pro relaxaci po svatbě.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-medium text-stone-900">3 700 Kč</span>
+                    <span className="text-sm text-stone-500">za noc</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Standard pokoj */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/Yard/standard.jpg"
+                    alt="Standard pokoj"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-light text-stone-900 mb-3">Standard</h4>
+                  <p className="text-stone-600 mb-4 text-sm">
+                    Komfortní pokoje s moderním vybavením, různé velikosti podle počtu lůžek.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-medium text-stone-900">2 100 - 3 300 Kč</span>
+                    <span className="text-sm text-stone-500">za noc</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Deluxe pokoj */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/Yard/deluxe.jpg"
+                    alt="Deluxe pokoj"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-light text-stone-900 mb-3">Deluxe</h4>
+                  <p className="text-stone-600 mb-4 text-sm">
+                    Prostorné pokoje s vyšším standardem vybavení a elegantním designem.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-medium text-stone-900">2 500 - 4 700 Kč</span>
+                    <span className="text-sm text-stone-500">za noc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-stone-100 rounded-2xl p-6 text-center">
+              <p className="text-stone-700 mb-2">
+                <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
+              </p>
+              <p className="text-sm text-stone-600">
+                Ceny se liší podle počtu lůžek. Pro rezervaci kontaktujte přímo resort.
+              </p>
+            </div>
+          </div>
+
+          {/* Kde ho najdete */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Kde ho najdete?</h3>
             <div className="relative mb-8">
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl" style={{ height: '400px' }}>
                 <iframe
@@ -787,86 +879,66 @@ export default function WeddingPage() {
       </section>
 
       {/* Program sekce */}
-      <section id="program" className="py-20 relative">
-        {/* Pozadí s fotkou */}
-        <div className="absolute inset-0">
-          <Image
-            src="/IMG-20250527-WA0001.jpg"
-            alt="Pozadí"
-            fill
-            className="object-cover object-[center_23%]"
-            quality={75}
-          />
-          <div className="absolute inset-0 bg-white/85"></div>
-        </div>
-
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+      <section id="program" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Program</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Časový harmonogram našeho svatebního dne 24. ledna 2026
+              Na co se můžete během našeho svatebního dne těšit?
             </p>
           </div>
 
-          {/* Timeline */}
+          {/* Program list */}
           <div className="max-w-4xl mx-auto">
-            <div className="space-y-12">
-              {/* 13:30 - Obřad */}
-              <div className="flex items-center gap-8">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-2xl font-serif font-light text-stone-900">13:30</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Kanapky + welcome drink</h3>
                 </div>
-                <div className="flex-shrink-0 w-4 h-4 rounded-full" style={{ backgroundColor: '#8b6f47' }}></div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-serif font-light text-stone-900 mb-2">Svatební obřad</h3>
-                  <p className="text-stone-600">
-                    Svatební ceremonie v krásném prostředí Yard Resort. Přivítání hostů a slavnostní &quot;ANO&quot;.
-                  </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Svatební obřad</h3>
                 </div>
-              </div>
-
-              {/* 14:30 - Fotografování */}
-              <div className="flex items-center gap-8">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-2xl font-serif font-light text-stone-900">14:30</span>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Skupinové focení</h3>
                 </div>
-                <div className="flex-shrink-0 w-4 h-4 rounded-full" style={{ backgroundColor: '#1f4f3f' }}></div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-serif font-light text-stone-900 mb-2">Fotografování</h3>
-                  <p className="text-stone-600">
-                    Společné fotografie s hosty, rodinné snímky a romantické fotky novomanželů.
-                  </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Přípitek + proslovy</h3>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Krájení dortu</h3>
                 </div>
               </div>
 
-              {/* 16:00 - Hostina */}
-              <div className="flex items-center gap-8">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-2xl font-serif font-light text-stone-900">16:00</span>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Focení novomanželů + ubytování hostů</h3>
                 </div>
-                <div className="flex-shrink-0 w-4 h-4 rounded-full" style={{ backgroundColor: '#4a3429' }}></div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-serif font-light text-stone-900 mb-2">Svatební hostina</h3>
-                  <p className="text-stone-600">
-                    Slavnostní menu, přípitek a oslavy s nejbližšími. Začátek našeho společného života.
-                  </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">První tanec</h3>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                  <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
                 </div>
               </div>
+            </div>
 
-              {/* 20:00 - Večerní program */}
-              <div className="flex items-center gap-8">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-2xl font-serif font-light text-stone-900">20:00</span>
-                </div>
-                <div className="flex-shrink-0 w-4 h-4 rounded-full" style={{ backgroundColor: '#6b6b6b' }}></div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-serif font-light text-stone-900 mb-2">Večerní program</h3>
-                  <p className="text-stone-600">
-                    Hudba, tanec a zábava do pozdních hodin. První tanec a oslavy s přáteli.
-                  </p>
-                </div>
-              </div>
+            <div className="mt-12 text-center">
+              <p className="text-lg text-stone-600 italic">
+                Mimo to se můžete těšit i na spoustu dalších překvapení, které si zatím necháme pro sebe :)
+              </p>
             </div>
           </div>
         </div>
@@ -881,38 +953,14 @@ export default function WeddingPage() {
           </div>
 
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-2xl p-12 mb-12 shadow-lg">
+            <div className="bg-white rounded-2xl p-12 shadow-lg">
               <div className="mb-8">
                 <Gift className="w-16 h-16 text-stone-400 mx-auto mb-6" />
-                <h3 className="text-2xl font-serif font-light text-stone-900 mb-6">Svatebčané naši milí</h3>
               </div>
-              <div className="text-lg text-stone-600 leading-relaxed font-serif italic space-y-4">
-                <p>dovolte nám prosbičku,</p>
-                <p>raději než věcné dary, naplňte nám kasičku.</p>
-                <p>Mnohokrát Vám děkujeme za každičký halíř,</p>
-                <p>stokrát lepší než nést domů stodesátý talíř.</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white border-2 border-stone-200 rounded-2xl p-8">
-                <h4 className="text-xl font-light text-stone-900 mb-4">Svatební cesta</h4>
-                <p className="text-stone-600 mb-6">
-                  Budeme rádi za drobný příspěvek na naši svatební cestu.
+              <div className="text-xl text-stone-600 leading-relaxed space-y-4">
+                <p>
+                  Největším darem pro nás bude, když tento den oslavíte s námi. Pokud byste nás ale chtěli potěšit ještě trochu více, rádi uvítáme finanční příspěvek, který nám pomůže splnit naše společné sny.
                 </p>
-                <div className="text-sm text-stone-500">
-                  Více informací na svatbě
-                </div>
-              </div>
-
-              <div className="bg-white border-2 border-stone-200 rounded-2xl p-8">
-                <h4 className="text-xl font-light text-stone-900 mb-4">Společné plány</h4>
-                <p className="text-stone-600 mb-6">
-                  Finanční příspěvek na naše společné plány a budoucnost.
-                </p>
-                <div className="text-sm text-stone-500">
-                  Více informací na svatbě
-                </div>
               </div>
             </div>
           </div>
@@ -926,8 +974,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Dress Code</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-lg italic text-stone-600 leading-relaxed max-w-2xl mx-auto font-serif">
-              Prosíme oblečte se s námi do schématu naší svatby a<br />
-              přijďte oblečeni v jedné z těchto barev
+              Prosíme oblečte se s námi do schématu naší svatby a přijďte formálně oblečeni v jedné z těchto barev:
             </p>
           </div>
 
@@ -983,17 +1030,8 @@ export default function WeddingPage() {
           </div>
 
           {/* Poznámka pro pány */}
-          <div className="text-center mb-8">
-            <p className="text-sm text-stone-500 italic">+ černá barva pro pány</p>
-          </div>
-
-          {/* Logo */}
           <div className="text-center">
-            <div className="flex items-center justify-center gap-3">
-              <span className="text-3xl font-serif font-light text-stone-900">A</span>
-              <div className="w-px h-8 bg-stone-400"></div>
-              <span className="text-3xl font-serif font-light text-stone-900">M</span>
-            </div>
+            <p className="text-sm text-stone-500 italic">+ černá barva pro pány</p>
           </div>
         </div>
       </section>
