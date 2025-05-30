@@ -606,8 +606,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Yard Resort</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-4xl mx-auto font-serif italic">
-              Romantické prostředí zahrady s rybníkem a stylové interiéry<br />
-              pro nezapomenutelnou zimní svatbu
+              Yard Resort se nachází pouze 15 min od pražských Letňan a 20 min od Brandýsa nad Labem. Celá událost se bude odehrávat uvnitř, takže se nemusíte obávat, že budete mrznout nebo zbytečně nakupovat nové zimní svršky.
             </p>
           </div>
 
@@ -720,7 +719,7 @@ export default function WeddingPage() {
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/Yard/wellness.jpg"
+                    src="/Yard/wellness2.jpg"
                     alt="Wellness pokoj"
                     fill
                     className="object-cover"
@@ -743,7 +742,7 @@ export default function WeddingPage() {
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/Yard/standard.jpg"
+                    src="/Yard/standard2.jpg"
                     alt="Standard pokoj"
                     fill
                     className="object-cover"
@@ -766,7 +765,7 @@ export default function WeddingPage() {
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/Yard/deluxe.jpg"
+                    src="/Yard/deluxe2.jpg"
                     alt="Deluxe pokoj"
                     fill
                     className="object-cover"
@@ -791,7 +790,7 @@ export default function WeddingPage() {
                 <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
               </p>
               <p className="text-sm text-stone-600">
-                Ceny se liší podle počtu lůžek. Pro rezervaci kontaktujte přímo resort.
+                Ceny se liší podle počtu lůžek. Pro rezervaci nás kontaktujte.
               </p>
             </div>
           </div>
@@ -851,6 +850,28 @@ export default function WeddingPage() {
             </div>
           </div>
 
+          {/* Parkoviště */}
+          <div className="mb-16">
+            <div className="bg-stone-100 rounded-2xl p-8 mb-8">
+              <p className="text-stone-700 leading-relaxed text-center">
+                Přímo v areálu je vyhrazené parkoviště pouze pro svatebčany a také vlastní vjezd.
+                Parkování je bezplatné a míst je dostatek. Jak se na parkoviště dostat můžete podrobně vidět na mapce níže:
+              </p>
+            </div>
+
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] relative">
+                <Image
+                  src="/Yard/vjezd.jpg"
+                  alt="Mapa vjezdu na parkoviště"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 100vw"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Odkazy */}
           <div className="text-center">
             <div className="flex flex-wrap gap-4 justify-center">
@@ -891,47 +912,42 @@ export default function WeddingPage() {
 
           {/* Program list */}
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Kanapky + welcome drink</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Svatební obřad</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Skupinové focení</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Přípitek + proslovy</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Krájení dortu</h3>
-                </div>
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Kanapky + welcome drink</h3>
               </div>
-
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Focení novomanželů + ubytování hostů</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">První tanec</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                  <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
-                </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Svatební obřad</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Skupinové focení</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Přípitek + proslovy</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Krájení dortu</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Focení novomanželů + ubytování hostů</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">První tanec</h3>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
               </div>
             </div>
 
@@ -974,7 +990,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Dress Code</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-lg italic text-stone-600 leading-relaxed max-w-2xl mx-auto font-serif">
-              Prosíme oblečte se s námi do schématu naší svatby a přijďte formálně oblečeni v jedné z těchto barev:
+              Prosíme, slaďte se s námi do schématu naší svatby a přijďte formálně oblečeni v jedné z těchto barev:
             </p>
           </div>
 
