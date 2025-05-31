@@ -280,7 +280,7 @@ export default function WeddingPage() {
               </div>
               <h3 className="text-2xl font-serif font-light text-stone-900 mb-4">Anička</h3>
               <p className="text-stone-600 leading-relaxed">
-                **Anna je věčný optimista a snílek, který bere život takový, jaký je a nebojí se žádné výzvy.
+                Do Aničky jsem se zamiloval na první pohled. Nejde to moc dobře vysvětlit. Měla a stále má charisma, které mě neuvěřitelně přitahuje. Poměrně dlouho mému šarmu odolávala, ale nakonec jsem ji udolal! :) Anička je pro mě osobou, kterou jsem dlouho hledal a konečně našel. Je to můj parťák na celý život, na kterého se mohu 100% spolehnout. Teda když zrovna náhodou nemá hlad, to se z ní totiž stane stane monstrum :D
               </p>
             </div>
 
@@ -297,7 +297,9 @@ export default function WeddingPage() {
               </div>
               <h3 className="text-2xl font-serif font-light text-stone-900 mb-4">Michal</h3>
               <p className="text-stone-600 leading-relaxed">
-                **Michal je obrovský dříč s velkým srdcem, který pomáhá všem kolem sebe.
+                Na Míšovi miluji spoustu věcí, ale hlavně jeho neustálou pozitivitu a nadhled. No a když mi poprvé uvařil, nebylo už cesty zpět :D. On je ten, co mě motivuje být lepším člověkem a nemít malé cíle. Míša je moje bezpečné místo - člověk, na kterého se mohu spolehnout, člověk, který mi vždy se vším pomůže a splní každou blbost, kterou si na něj vymyslím :). Je taky nejlepší táta pro naši Lilinku a jsem vděčná, že je právě on jejím mužským vzorem.
+
+
               </p>
             </div>
           </div>
@@ -832,7 +834,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Program</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Na co se můžete během našeho svatebního dne těšit?
+              Na co se můžete během našeho svatebního dne těšit? Obřad začíná ve 13:30, ale doražte prosíme nejméně 30 minut před.
             </p>
           </div>
 
@@ -841,7 +843,7 @@ export default function WeddingPage() {
             <div className="space-y-6">
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Kanapky + welcome drink</h3>
+                <h3 className="text-lg font-light text-stone-900">Kanapky a welcome drink</h3>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
@@ -853,7 +855,7 @@ export default function WeddingPage() {
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Přípitek + proslovy</h3>
+                <h3 className="text-lg font-light text-stone-900">Přípitek a proslovy</h3>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
@@ -861,11 +863,7 @@ export default function WeddingPage() {
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Focení novomanželů + ubytování hostů</h3>
-              </div>
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
+                <h3 className="text-lg font-light text-stone-900">Focení novomanželů</h3>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
@@ -873,7 +871,16 @@ export default function WeddingPage() {
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
+              </div>
+              <div className="flex items-center justify-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
+              </div>
+            </div>
+			<div className="flex items-center justify-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Párty</h3>
               </div>
             </div>
 
@@ -1187,78 +1194,6 @@ export default function WeddingPage() {
         </div>
       </section>
 
-      {/* Kontakt sekce */}
-      <section id="kontakt" className="py-20 bg-stone-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Kontakt</h2>
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-light text-stone-900 mb-6">Novomanželé</h3>
-                <div className="space-y-6 text-sm">
-                  <div>
-                    <h4 className="font-light tracking-wide text-stone-700 mb-3">Anna</h4>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Mail className="w-4 h-4 text-stone-400" />
-                      <p className="text-stone-600">anna@email.cz</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4 text-stone-400" />
-                      <p className="text-stone-600">+420 xxx xxx xxx</p>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-light tracking-wide text-stone-700 mb-3">Michal</h4>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Mail className="w-4 h-4 text-stone-400" />
-                      <p className="text-stone-600">michal@email.cz</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4 text-stone-400" />
-                      <p className="text-stone-600">+420 xxx xxx xxx</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-light text-stone-900 mb-6">Důležité informace</h3>
-                <div className="text-sm space-y-3">
-                  <p className="text-stone-600">
-                    <span className="font-light tracking-wide text-stone-700">Datum:</span>
-                    <span className="ml-2">24. ledna 2026</span>
-                  </p>
-                  <p className="text-stone-600">
-                    <span className="font-light tracking-wide text-stone-700">Čas:</span>
-                    <span className="ml-2">13:30</span>
-                  </p>
-                  <p className="text-stone-600">
-                    <span className="font-light tracking-wide text-stone-700">Místo:</span>
-                    <span className="ml-2">Yard Resort, Předboj</span>
-                  </p>
-                  <p className="text-stone-600">
-                    <span className="font-light tracking-wide text-stone-700">Parkování:</span>
-                    <span className="ml-2">Zdarma na místě</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-16 pt-8 border-t border-stone-200">
-            <p className="text-stone-500 text-xs text-center">
-              Máte-li jakékoli dotazy ohledně svatby, ubytování nebo dopravy, neváhejte nás kontaktovat.
-              Těšíme se na vás!
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-stone-900 text-white py-12">
