@@ -840,7 +840,7 @@ export default function WeddingPage() {
             <div className="space-y-6">
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Kanapky + welcome drink</h3>
+                <h3 className="text-lg font-light text-stone-900">Kanapky a welcome drink</h3>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
@@ -852,7 +852,7 @@ export default function WeddingPage() {
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Přípitek + proslovy</h3>
+                <h3 className="text-lg font-light text-stone-900">Přípitek a proslovy</h3>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
@@ -860,11 +860,7 @@ export default function WeddingPage() {
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Focení novomanželů + ubytování hostů</h3>
-              </div>
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
-                <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
+                <h3 className="text-lg font-light text-stone-900">Focení novomanželů</h3>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
@@ -872,7 +868,16 @@ export default function WeddingPage() {
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Vyplétání kytice</h3>
+              </div>
+              <div className="flex items-center justify-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
+              </div>
+            </div>
+				<div className="flex items-center justify-center gap-4">
+                <div className="w-3 h-3 rounded-full bg-stone-400"></div>
+                <h3 className="text-lg font-light text-stone-900">Párty</h3>
               </div>
             </div>
 
@@ -971,8 +976,258 @@ export default function WeddingPage() {
           </div>
 
           {/* Poznámka pro pány */}
-          <div className="text-center">
+          <div className="text-center mb-16">
             <p className="text-sm text-stone-500 italic">+ černá barva pro pány</p>
+          </div>
+
+          {/* Galerie inspirace */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Inspirace pro váš outfit</h3>
+
+            {/* Tmavě zelená inspirace */}
+            <div className="mb-12">
+              <h4 className="text-lg font-light text-stone-900 mb-6 text-center">Tmavě zelená</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/1.jpg"
+                      alt="Tmavě zelená inspirace 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Elegantní tmavě zelená</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/2.jpg"
+                      alt="Tmavě zelená inspirace 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Formální tmavě zelená</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/3.jpg"
+                      alt="Tmavě zelená inspirace 3"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Stylová tmavě zelená</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Světle hnědá inspirace */}
+            <div className="mb-12">
+              <h4 className="text-lg font-light text-stone-900 mb-6 text-center">Světle hnědá</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/svetlehneda1.jpg"
+                      alt="Světle hnědá inspirace 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Elegantní světle hnědá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/svetlehneda2.jpg"
+                      alt="Světle hnědá inspirace 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Formální světle hnědá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/svetlehneda3.jpg"
+                      alt="Světle hnědá inspirace 3"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Stylová světle hnědá</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Světle šedá inspirace */}
+            <div className="mb-12">
+              <h4 className="text-lg font-light text-stone-900 mb-6 text-center">Světle šedá</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/svetleseda1.jpg"
+                      alt="Světle šedá inspirace 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Elegantní světle šedá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/svetleseda2.jpg"
+                      alt="Světle šedá inspirace 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Formální světle šedá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/svetleseda3.jpg"
+                      alt="Světle šedá inspirace 3"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Stylová světle šedá</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Tmavě hnědá inspirace */}
+            <div className="mb-12">
+              <h4 className="text-lg font-light text-stone-900 mb-6 text-center">Tmavě hnědá</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tmavehneda1.jpg"
+                      alt="Tmavě hnědá inspirace 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Elegantní tmavě hnědá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tmavehneda2.jpg"
+                      alt="Tmavě hnědá inspirace 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Formální tmavě hnědá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tmavehneda3.jpg"
+                      alt="Tmavě hnědá inspirace 3"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Stylová tmavě hnědá</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Tmavě šedá inspirace */}
+            <div className="mb-12">
+              <h4 className="text-lg font-light text-stone-900 mb-6 text-center">Tmavě šedá</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tmaveseda1.jpg"
+                      alt="Tmavě šedá inspirace 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Elegantní tmavě šedá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tmaveseda2.jpg"
+                      alt="Tmavě šedá inspirace 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Formální tmavě šedá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tmaveseda3.jpg"
+                      alt="Tmavě šedá inspirace 3"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Stylová tmavě šedá</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
