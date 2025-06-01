@@ -874,7 +874,6 @@ export default function WeddingPage() {
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Večerní raut</h3>
               </div>
-            </div>
 				<div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 rounded-full bg-stone-400"></div>
                 <h3 className="text-lg font-light text-stone-900">Párty</h3>
