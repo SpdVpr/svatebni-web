@@ -115,6 +115,8 @@ const Countdown = () => {
 
 // Navigační menu
 const NavigationMenu = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const menuItems = [
     { href: '#uvod', label: 'Úvod' },
     { href: '#snoubenci', label:'Snoubenci' },
@@ -150,11 +152,50 @@ const NavigationMenu = () => {
             ))}
           </div>
 
-          {/* Datum */}
-          <div className="text-sm font-light text-stone-600">
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-stone-600 hover:text-stone-900 transition-colors"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* Datum - pouze na desktopu */}
+          <div className="hidden md:block text-sm font-light text-stone-600">
             24.01.2026
           </div>
         </div>
+
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-stone-200">
+            <div className="px-6 py-4 space-y-4">
+              {menuItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-base font-light text-stone-600 hover:text-stone-900 transition-colors py-2"
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="pt-4 border-t border-stone-200">
+                <div className="text-sm font-light text-stone-600">
+                  24.01.2026
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
@@ -1274,33 +1315,6 @@ export default function WeddingPage() {
                   </div>
                 </div>
 
-                {/* Děti */}
-                <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-4">
-                    Bereme s sebou děti
-                  </label>
-                  <div className="space-y-3">
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="children"
-                        value="yes"
-                        className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
-                      />
-                      <span className="ml-3 text-stone-700">Ano</span>
-                    </label>
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="children"
-                        value="no"
-                        className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
-                      />
-                      <span className="ml-3 text-stone-700">Ne</span>
-                    </label>
-                  </div>
-                </div>
-
                 {/* Účast */}
                 <div>
                   <label className="block text-sm font-medium text-stone-700 mb-4">
@@ -1355,7 +1369,32 @@ export default function WeddingPage() {
                   </div>
                 </div>
 
-
+                {/* Děti */}
+                <div>
+                  <label className="block text-sm font-medium text-stone-700 mb-4">
+                    Bereme s sebou děti
+                  </label>
+                  <div className="space-y-3">
+                    <label className="flex items-center">
+                      <input
+                        type="radio"
+                        name="children"
+                        value="yes"
+                        className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
+                      />
+                      <span className="ml-3 text-stone-700">Ano</span>
+                    </label>
+                    <label className="flex items-center">
+                      <input
+                        type="radio"
+                        name="children"
+                        value="no"
+                        className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
+                      />
+                      <span className="ml-3 text-stone-700">Ne</span>
+                    </label>
+                  </div>
+                </div>
 
                 {/* Ubytování */}
                 <div>
@@ -1429,7 +1468,7 @@ export default function WeddingPage() {
       <footer className="bg-stone-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="text-2xl font-serif font-light">Anna</span>
+            <span className="text-2xl font-serif font-light">Anička</span>
             <div className="w-px h-6 bg-white/40"></div>
             <span className="text-2xl font-serif font-light">Michal</span>
           </div>
