@@ -123,7 +123,7 @@ const NavigationMenu = () => {
     { href: '#program', label: 'Program' },
     { href: '#dary', label: 'Dary' },
     { href: '#info', label: 'Dress Code' },
-    { href: '#rsvp', label: 'RSVP' }
+    { href: '#rsvp', label: 'Účast' }
   ];
 
   return (
@@ -990,7 +990,7 @@ export default function WeddingPage() {
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="aspect-[3/4] relative">
                     <Image
-                      src="/dress/1.jpg"
+                      src="/dress/11.jpg"
                       alt="Tmavě zelená inspirace 1"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1245,11 +1245,11 @@ export default function WeddingPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
               <form className="space-y-8">
-                {/* Jméno a email */}
+                {/* Jména */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-3">
-                      Celé jméno *
+                      Vaše jméno
                     </label>
                     <input
                       type="text"
@@ -1261,18 +1261,43 @@ export default function WeddingPage() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="guests" className="block text-sm font-medium text-stone-700 mb-3">
-                      Celkový počet osob (Včetně vás, doprovodu a případně i dětí)
+                    <label htmlFor="companion" className="block text-sm font-medium text-stone-700 mb-3">
+                      Jméno doprovodu
                     </label>
                     <input
-                      type="number"
-                      id="guests"
-                      name="guests"
-                      required
-                      min="1"
+                      type="text"
+                      id="companion"
+                      name="companion"
                       className="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-400 focus:border-transparent transition-all duration-200"
-                      placeholder="Zadejte počet osob"
+                      placeholder="Jméno a příjmení doprovodu"
                     />
+                  </div>
+                </div>
+
+                {/* Děti */}
+                <div>
+                  <label className="block text-sm font-medium text-stone-700 mb-4">
+                    Bereme s sebou děti
+                  </label>
+                  <div className="space-y-3">
+                    <label className="flex items-center">
+                      <input
+                        type="radio"
+                        name="children"
+                        value="yes"
+                        className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
+                      />
+                      <span className="ml-3 text-stone-700">Ano</span>
+                    </label>
+                    <label className="flex items-center">
+                      <input
+                        type="radio"
+                        name="children"
+                        value="no"
+                        className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
+                      />
+                      <span className="ml-3 text-stone-700">Ne</span>
+                    </label>
                   </div>
                 </div>
 
