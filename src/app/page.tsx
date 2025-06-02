@@ -715,21 +715,6 @@ export default function WeddingPage() {
           <div className="mb-16">
             <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Ubytování</h3>
 
-            <div className="bg-stone-800 rounded-2xl p-8 text-center mb-12">
-              <div className="mb-4">
-                <Home className="w-8 h-8 text-white mx-auto" />
-              </div>
-              <p className="text-white text-lg leading-relaxed mb-4">
-                K dispozici je krásné ubytování přímo na místě obřadu za speciální cenu. Pokud tedy nechcete cestovat v noci domů, velmi doporučujeme rezervaci – osobně vyzkoušeno.
-              </p>
-              <p className="text-white text-lg leading-relaxed mb-4">
-                Kapacita je omezená, proto neotálejte a dejte nám vědět co nejdříve. Ceny se liší podle počtu lůžek. Pro rezervaci prosím kontaktujte přímo jednoho z nás.
-              </p>
-              <p className="text-white/90 text-base">
-                <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
-              </p>
-            </div>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {/* Wellness pokoj */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
@@ -801,6 +786,20 @@ export default function WeddingPage() {
               </div>
             </div>
 
+            <div className="bg-stone-800 rounded-2xl p-8 text-center">
+              <div className="mb-4">
+                <Home className="w-8 h-8 text-white mx-auto" />
+              </div>
+              <p className="text-white text-lg leading-relaxed mb-4">
+                K dispozici je krásné ubytování přímo na místě obřadu za speciální cenu. Pokud tedy nechcete cestovat v noci domů, velmi doporučujeme rezervaci – osobně vyzkoušeno.
+              </p>
+              <p className="text-white text-lg leading-relaxed mb-4">
+                Kapacita je omezená, proto neotálejte a dejte nám vědět co nejdříve. Ceny se liší podle počtu lůžek. Pro rezervaci prosím kontaktujte přímo jednoho z nás.
+              </p>
+              <p className="text-white/90 text-base">
+                <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
+              </p>
+            </div>
 
           </div>
 
