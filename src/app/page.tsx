@@ -222,7 +222,7 @@ export default function WeddingPage() {
             src="/Lilien-newborn-30.jpg"
             alt="Anna & Michal"
             fill
-            className="object-cover"
+            className="object-cover object-center md:object-cover"
             priority
             quality={100}
           />
@@ -247,9 +247,9 @@ export default function WeddingPage() {
                     fill="none"
                     stroke="none"
                   />
-                  <text className="fill-white text-sm font-light tracking-[0.3em]">
+                  <text className="fill-white text-xl md:text-2xl font-light tracking-[0.5em]">
                     <textPath href="#curve" startOffset="50%" textAnchor="middle">
-                      ANNA & MICHAL
+                      Anička a Michal
                     </textPath>
                   </text>
                 </svg>
@@ -321,7 +321,7 @@ export default function WeddingPage() {
               </div>
               <h3 className="text-2xl font-serif font-light text-stone-900 mb-4">Anička</h3>
               <p className="text-stone-600 leading-relaxed">
-                Do Aničky jsem se zamiloval na první pohled. Nejde to moc dobře vysvětlit. Měla a stále má charisma, které mě neuvěřitelně přitahuje. Poměrně dlouho mému šarmu odolávala, ale nakonec jsem ji udolal! :) Anička je pro mě osobou, kterou jsem dlouho hledal a konečně našel. Je to můj parťák na celý život, na kterého se mohu 100% spolehnout. Teda když zrovna náhodou nemá hlad, to se z ní totiž stane stane monstrum :D
+                Do Aničky jsem se zamiloval na první pohled. Nejde to moc dobře vysvětlit. Měla a stále má charisma, které mě neuvěřitelně přitahuje. Poměrně dlouho mému šarmu odolávala, ale nakonec jsem ji udolal! :) Anička je pro mě osobou, kterou jsem dlouho hledal a konečně našel. Je to můj parťák na celý život, na kterého se mohu 100% spolehnout. Teda když zrovna náhodou nemá hlad, to se z ní totiž stane monstrum :D
               </p>
             </div>
 
@@ -338,7 +338,7 @@ export default function WeddingPage() {
               </div>
               <h3 className="text-2xl font-serif font-light text-stone-900 mb-4">Michal</h3>
               <p className="text-stone-600 leading-relaxed">
-                Na Míšovi miluji spoustu věcí, ale hlavně jeho neustálou pozitivitu a nadhled. No a když mi poprvé uvařil, už nebylo cesty zpět :D. On je ten, co mě motivuje být lepším člověkem a nemít malé cíle. Míša je moje bezpečné místo - člověk, na kterého se mohu spolehnout, člověk, který mi vždy se vším pomůže a splní každou blbost, kterou si na něj vymyslím :). Je taky naprosto nejlepší táta pro naši Lilinku a jsem nekonečně vděčná, že je právě on jejím mužským vzorem.
+                Na Míšovi miluji spoustu věcí, ale hlavně jeho neustálou pozitivitu a nadhled. No a když mi poprvé uvařil, už nebylo cesty zpět :D. On je ten, co mě motivuje být lepším člověkem a nemít malé cíle. Míša je moje bezpečné místo - člověk, na kterého se mohu spolehnout, člověk, který mi vždy se vším pomůže a splní každou blbost, kterou si na něj vymyslím :). Je taky nejlepší táta pro naši Lilinku a jsem vděčná, že je právě on jejím mužským vzorem.
               </p>
             </div>
           </div>
