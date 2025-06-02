@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MapPin, Heart, Gift, ExternalLink } from "lucide-react";
+import { MapPin, Heart, Gift, ExternalLink, Baby } from "lucide-react";
 
 // Komponenta pro padající sníh s více vločkami
 const FallingSnow = () => {
@@ -123,6 +123,7 @@ const NavigationMenu = () => {
     { href: '#galerie', label: 'Galerie' },
     { href: '#yard-resort', label: 'Yard Resort' },
     { href: '#program', label: 'Program' },
+    { href: '#deti', label: 'Děti' },
     { href: '#dary', label: 'Dary' },
     { href: '#info', label: 'Dress Code' },
     { href: '#rsvp', label: 'Účast' }
@@ -714,6 +715,18 @@ export default function WeddingPage() {
           <div className="mb-16">
             <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Ubytování</h3>
 
+            <div className="bg-stone-800 rounded-2xl p-8 text-center mb-12">
+              <p className="text-white text-lg leading-relaxed mb-4">
+                K dispozici je krásné ubytování přímo na místě obřadu za speciální cenu. Pokud tedy nechcete cestovat v noci domů, velmi doporučujeme rezervaci – osobně vyzkoušeno.
+              </p>
+              <p className="text-white text-lg leading-relaxed mb-4">
+                Kapacita je omezená, proto neotálejte a dejte nám vědět. Více podrobností, včetně typů pokojů a fotografií, najdete na našem webu. Ceny se liší podle počtu lůžek. Pro rezervaci nás prosím kontaktujte.
+              </p>
+              <p className="text-white/90 text-base">
+                <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
+              </p>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {/* Wellness pokoj */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
@@ -785,19 +798,12 @@ export default function WeddingPage() {
               </div>
             </div>
 
-            <div className="bg-stone-800 rounded-2xl p-6 text-center">
-              <p className="text-white mb-2">
-                <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
-              </p>
-              <p className="text-sm text-white/80">
-                Ceny se liší podle počtu lůžek. Pro rezervaci nás kontaktujte.
-              </p>
-            </div>
+
           </div>
 
           {/* Kde ho najdete */}
           <div className="mb-16">
-            <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Kde ho najdete?</h3>
+            <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Kde Yard Resort najdete?</h3>
             <div className="relative mb-8">
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl" style={{ height: '400px' }}>
                 <iframe
@@ -872,7 +878,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Program</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Na co se můžete během našeho svatebního dne těšit?
+              Na co se můžete během našeho svatebního dne těšit? Obřad začíná ve 13:30, ale na místo se dostavte nejpozději 30 minut před.
             </p>
           </div>
 
@@ -925,6 +931,32 @@ export default function WeddingPage() {
               <p className="text-lg text-stone-600 italic">
                 Mimo to pro Vás chystáme i spoustu dalších překvapení, které si zatím necháme pro sebe :)
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Děti sekce */}
+      <section id="deti" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Děti</h2>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
+          </div>
+
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-stone-50 rounded-2xl p-12 shadow-lg">
+              <div className="mb-8">
+                <Baby className="w-16 h-16 text-stone-400 mx-auto mb-6" />
+              </div>
+              <div className="text-xl text-stone-600 leading-relaxed space-y-4">
+                <p>
+                  Chceme, abyste si náš svatební den užili naplno – bez starostí, s dobrým jídlem, pitím, tancem a spoustou zábavy. Proto bychom byli rádi, kdybyste tentokrát nechali děti doma a dopřáli si zasloužený odpočinek.
+                </p>
+                <p>
+                  Pokud ale hlídání možné není, samozřejmě vás i vaše ratolesti rádi uvidíme. Počítejte ale, prosím, s tím, že svatba nebude dětem nijak přizpůsobena.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1143,7 +1175,7 @@ export default function WeddingPage() {
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="aspect-[3/4] relative">
                     <Image
-                      src="/dress/svetleseda2.jpg"
+                      src="/dress/tmaveseda2.jpg"
                       alt="Světle šedá inspirace 2"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1241,7 +1273,7 @@ export default function WeddingPage() {
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="aspect-[3/4] relative">
                     <Image
-                      src="/dress/tmaveseda2.jpg"
+                      src="/dress/svetleseda2.jpg"
                       alt="Tmavě šedá inspirace 2"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
