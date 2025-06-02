@@ -685,7 +685,7 @@ export default function WeddingPage() {
             <div
               className="relative rounded-3xl overflow-hidden shadow-2xl bg-stone-800"
               style={{
-                minHeight: '400px'
+                minHeight: '285px'
               }}
             >
               {/* Overlay pattern */}
