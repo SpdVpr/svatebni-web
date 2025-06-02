@@ -238,21 +238,11 @@ export default function WeddingPage() {
           <div className="text-center text-white max-w-4xl mx-auto">
             {/* Logo-inspired design */}
             <div className="mb-12">
-              {/* Zakřivený text nahoře */}
+              {/* Rovný text nahoře */}
               <div className="mb-8">
-                <svg viewBox="0 0 400 100" className="w-full max-w-md mx-auto">
-                  <path
-                    id="curve"
-                    d="M 50 50 Q 200 20 350 50"
-                    fill="none"
-                    stroke="none"
-                  />
-                  <text className="fill-white text-xl md:text-2xl font-light tracking-[0.5em]">
-                    <textPath href="#curve" startOffset="50%" textAnchor="middle">
-                      Anička a Michal
-                    </textPath>
-                  </text>
-                </svg>
+                <div className="text-xl md:text-2xl font-light tracking-[0.5em] text-center">
+                  Anička a Michal
+                </div>
               </div>
 
               {/* Hlavní monogram */}
@@ -703,7 +693,7 @@ export default function WeddingPage() {
                   </div>
                   <div className="text-lg leading-relaxed">
                     <p className="opacity-90">
-                      Toto místo jsme objevili náhodou. Míša sem vzal Aničku na narozeninový pobyt a při té příležitosti jsme zjistili, že tu dělají i svatby. Domluvili jsme se tedy přímo na místě na ukázku svatebních prostor. Okouzlila nás historická sýpka, stylové ubytování pro svatebčany a špičková gastronomie, která je pro nás jedno z hlavních kriterií. Do místa jsme se zamilovali, dál už nic nehledali a za pár měsíců podepsali rezervační smlouvu a začali řešit náš vysněný den D.
+                      Toto místo jsme objevili náhodou. Jeli jsme sem na narozeninový pobyt a při té příležitosti jsme zjistili, že tu dělají i svatby. Domluvili jsme se tedy přímo na místě na ukázku svatebních prostor. Okouzlila nás historická sýpka, stylové ubytování pro svatebčany a špičková gastronomie, která je pro nás jedno z hlavních kriterií. Do místa jsme se zamilovali, dál už nic nehledali a za pár měsíců podepsali rezervační smlouvu a začali řešit náš vysněný den D.
                     </p>
                   </div>
                 </div>
@@ -830,7 +820,7 @@ export default function WeddingPage() {
               <div className="text-center mb-4">
                 <Car className="w-8 h-8 text-white mx-auto" />
               </div>
-              <p className="text-white leading-relaxed text-center">
+              <p className="text-white text-lg leading-relaxed text-center">
                 Přímo v areálu je vyhrazené parkoviště pouze pro svatebčany a také vlastní vjezd.
                 Parkování je bezplatné a míst je dostatek. Jak se na parkoviště dostat můžete podrobně vidět na mapce níže:
               </p>
