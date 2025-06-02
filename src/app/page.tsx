@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MapPin, Heart, Gift, ExternalLink, Baby } from "lucide-react";
+import { MapPin, Heart, Gift, ExternalLink, Baby, Car, Home } from "lucide-react";
 
 // Komponenta pro padající sníh s více vločkami
 const FallingSnow = () => {
@@ -352,7 +352,7 @@ export default function WeddingPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-light text-stone-900 mb-6">Galerie</h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-400 to-transparent mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Chronologická cesta našeho vztahu - od prvního setkání až po zásnuby. Každá fotka vypráví příběh toho, co jsme zažili &quot;poprvé&quot;.
+              Chronologická cesta našeho vztahu - od prvního setkání až po narození Lilien. Každá fotka vypráví příběh toho, co jsme spolu zažili &quot;poprvé&quot;.
             </p>
           </div>
 
@@ -696,12 +696,12 @@ export default function WeddingPage() {
               </div>
 
               {/* Obsah banneru */}
-              <div className="relative z-10 p-12 md:p-16 text-white text-center">
+              <div className="relative z-10 p-8 md:p-12 text-white text-center">
                 <div className="max-w-4xl mx-auto">
-                  <h3 className="text-3xl md:text-4xl font-serif font-light mb-8 tracking-wide">
-                    Místo našich snů
-                  </h3>
-                  <div className="space-y-6 text-lg leading-relaxed">
+                  <div className="mb-6">
+                    <Heart className="w-12 h-12 text-white mx-auto" />
+                  </div>
+                  <div className="text-lg leading-relaxed">
                     <p className="opacity-90">
                       Toto místo jsme objevili náhodou. Míša sem vzal Aničku na narozeninový pobyt a při té příležitosti jsme zjistili, že tu dělají i svatby. Domluvili jsme se tedy přímo na místě na ukázku svatebních prostor. Okouzlila nás historická sýpka, stylové ubytování pro svatebčany a špičková gastronomie, která je pro nás jedno z hlavních kriterií. Do místa jsme se zamilovali, dál už nic nehledali a za pár měsíců podepsali rezervační smlouvu a začali řešit náš vysněný den D.
                     </p>
@@ -716,11 +716,14 @@ export default function WeddingPage() {
             <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Ubytování</h3>
 
             <div className="bg-stone-800 rounded-2xl p-8 text-center mb-12">
+              <div className="mb-4">
+                <Home className="w-8 h-8 text-white mx-auto" />
+              </div>
               <p className="text-white text-lg leading-relaxed mb-4">
                 K dispozici je krásné ubytování přímo na místě obřadu za speciální cenu. Pokud tedy nechcete cestovat v noci domů, velmi doporučujeme rezervaci – osobně vyzkoušeno.
               </p>
               <p className="text-white text-lg leading-relaxed mb-4">
-                Kapacita je omezená, proto neotálejte a dejte nám vědět. Více podrobností, včetně typů pokojů a fotografií, najdete na našem webu. Ceny se liší podle počtu lůžek. Pro rezervaci nás prosím kontaktujte.
+                Kapacita je omezená, proto neotálejte a dejte nám vědět co nejdříve. Ceny se liší podle počtu lůžek. Pro rezervaci prosím kontaktujte přímo jednoho z nás.
               </p>
               <p className="text-white/90 text-base">
                 <strong>Check-in:</strong> 14:00 | <strong>Check-out:</strong> 10:00
@@ -825,6 +828,9 @@ export default function WeddingPage() {
           {/* Parkoviště */}
           <div className="mb-16">
             <div className="bg-stone-800 rounded-2xl p-8 mb-8">
+              <div className="text-center mb-4">
+                <Car className="w-8 h-8 text-white mx-auto" />
+              </div>
               <p className="text-white leading-relaxed text-center">
                 Přímo v areálu je vyhrazené parkoviště pouze pro svatebčany a také vlastní vjezd.
                 Parkování je bezplatné a míst je dostatek. Jak se na parkoviště dostat můžete podrobně vidět na mapce níže:
