@@ -204,9 +204,19 @@ const NavigationMenu = () => {
 
 export default function WeddingPage() {
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   return (
@@ -215,7 +225,13 @@ export default function WeddingPage() {
       <NavigationMenu />
 
       {/* Hero sekce */}
-      <section id="uvod" className="relative overflow-hidden" style={{ height: '139vh' }}>
+      <section
+        id="uvod"
+        className="relative overflow-hidden"
+        style={{
+          height: isMobile ? '105vh' : '139vh'
+        }}
+      >
         {/* Pozadí s fotografií */}
         <div className="absolute inset-0">
           <Image
@@ -234,7 +250,12 @@ export default function WeddingPage() {
         {mounted && <FallingSnow />}
 
         {/* Hlavní obsah inspirovaný logem */}
-        <div className="relative z-20 flex items-center justify-center p-8 pt-24" style={{ height: '139vh' }}>
+        <div
+          className="relative z-20 flex items-center justify-center p-8 pt-24"
+          style={{
+            height: isMobile ? '105vh' : '139vh'
+          }}
+        >
           <div className="text-center text-white max-w-4xl mx-auto">
             {/* Logo-inspired design */}
             <div className="mb-12">
