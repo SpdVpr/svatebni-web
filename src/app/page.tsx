@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MapPin, Heart, Gift, ExternalLink, Baby, Car, Home } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 // Komponenta pro padající sníh s více vločkami
 const FallingSnow = () => {
@@ -243,10 +244,27 @@ export default function WeddingPage() {
     setSubmitMessage('');
 
     try {
-      // Simulace odeslání formuláře - zde by bylo volání API
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Příprava dat pro EmailJS
+      const templateParams = {
+        to_email: 'annmayerova@gmail.com',
+        from_name: formData.name,
+        companion_name: formData.companion || 'Bez doprovodu',
+        attendance: formData.attendance,
+        children: formData.children,
+        accommodation: formData.accommodation,
+        note: formData.note || 'Žádná poznámka',
+        reply_to: 'annmayerova@gmail.com'
+      };
 
-      setSubmitMessage('Děkujeme! Vaše potvrzení účasti bylo úspěšně odesláno.');
+      // Odeslání emailu přes EmailJS
+      await emailjs.send(
+        'service_svatba', // Service ID - bude potřeba nastavit
+        'template_svatba', // Template ID - bude potřeba nastavit
+        templateParams,
+        'your_public_key' // Public Key - bude potřeba nastavit
+      );
+
+      setSubmitMessage('Děkujeme! Vaše potvrzení účasti bylo úspěšně odesláno na email annmayerova@gmail.com.');
       setFormData({
         name: '',
         companion: '',
@@ -255,8 +273,8 @@ export default function WeddingPage() {
         accommodation: '',
         note: ''
       });
-    } catch (error) {
-      setSubmitMessage('Nastala chyba při odesílání formuláře. Zkuste to prosím znovu.');
+    } catch {
+      setSubmitMessage('Nastala chyba při odesílání formuláře. Zkuste to prosím znovu nebo napište přímo na annmayerova@gmail.com.');
     } finally {
       setIsSubmitting(false);
     }
