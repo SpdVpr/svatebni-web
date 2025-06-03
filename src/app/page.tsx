@@ -222,7 +222,7 @@ export default function WeddingPage() {
             src="/Lilien-newborn-30.jpg"
             alt="Anna & Michal"
             fill
-            className="object-cover object-left md:object-center -translate-x-[140px] md:translate-x-0"
+            className="object-cover object-[71%_center] md:object-center"
             priority
             quality={100}
           />
