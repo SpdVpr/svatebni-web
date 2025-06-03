@@ -258,10 +258,10 @@ export default function WeddingPage() {
 
       // Odeslání emailu přes EmailJS
       await emailjs.send(
-        'service_svatba', // Service ID - bude potřeba nastavit
-        'template_svatba', // Template ID - bude potřeba nastavit
+        'service_svatba', // Service ID
+        'template_svatba', // Template ID
         templateParams,
-        'your_public_key' // Public Key - bude potřeba nastavit
+        '5gUZ3nurvCX404Ret' // Public Key
       );
 
       setSubmitMessage('Děkujeme! Vaše potvrzení účasti bylo úspěšně odesláno na email annmayerova@gmail.com.');

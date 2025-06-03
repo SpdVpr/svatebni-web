@@ -52,16 +52,20 @@ Odesláno ze svatebního webu
 1. V dashboard jděte na **"Account"** → **"General"**
 2. Zkopírujte **Public Key**
 
-### 6. Aktualizace kódu
-V souboru `src/app/page.tsx` nahraďte:
+### 6. Aktualizace kódu ✅ HOTOVO
+Kód je už aktualizován s vašimi klíči:
 ```javascript
 await emailjs.send(
-  'service_svatba', // ✅ Už nastaveno
-  'template_svatba', // ✅ Už nastaveno
+  'service_svatba', // ✅ Service ID
+  'template_svatba', // ✅ Template ID
   templateParams,
-  'your_public_key' // ❌ NAHRAĎTE svým Public Key
+  '5gUZ3nurvCX404Ret' // ✅ Váš Public Key
 );
 ```
+
+**Vaše klíče:**
+- **Public Key:** `5gUZ3nurvCX404Ret` ✅
+- **Private Key:** `8Mi6as5xscrlxHWYaFoSZ` (pro EmailJS dashboard)
 
 ### 7. Testování
 1. Uložte změny a pushněte na GitHub
