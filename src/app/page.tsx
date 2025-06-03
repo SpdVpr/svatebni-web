@@ -205,6 +205,16 @@ const NavigationMenu = () => {
 export default function WeddingPage() {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    companion: '',
+    attendance: '',
+    children: '',
+    accommodation: '',
+    note: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   useEffect(() => {
     setMounted(true);
@@ -218,6 +228,39 @@ export default function WeddingPage() {
 
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitMessage('');
+
+    try {
+      // Simulace odeslání formuláře - zde by bylo volání API
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
+      setSubmitMessage('Děkujeme! Vaše potvrzení účasti bylo úspěšně odesláno.');
+      setFormData({
+        name: '',
+        companion: '',
+        attendance: '',
+        children: '',
+        accommodation: '',
+        note: ''
+      });
+    } catch (error) {
+      setSubmitMessage('Nastala chyba při odesílání formuláře. Zkuste to prosím znovu.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -710,7 +753,7 @@ export default function WeddingPage() {
               <div className="relative z-10 p-8 md:p-12 text-white text-center">
                 <div className="max-w-4xl mx-auto">
                   <div className="mb-6">
-                    <Heart className="w-12 h-12 text-white mx-auto" />
+                    <Heart className="w-8 h-8 text-white mx-auto" />
                   </div>
                   <div className="text-lg leading-relaxed">
                     <p className="opacity-90">
@@ -843,7 +886,7 @@ export default function WeddingPage() {
               </div>
               <p className="text-white text-lg leading-relaxed text-center">
                 Přímo v areálu je vyhrazené parkoviště pouze pro svatebčany a také vlastní vjezd.
-                Parkování je bezplatné a míst je dostatek. Jak se na parkoviště dostat můžete podrobně vidět na mapce níže:
+                Parkování je bezplatné a míst je dostatek. Jak se na parkoviště dostat můžete podrobně vidět na mapce níže.
               </p>
             </div>
 
@@ -945,7 +988,7 @@ export default function WeddingPage() {
 
             <div className="mt-12 text-center">
               <p className="text-lg text-stone-600 italic">
-                Mimo to pro Vás chystáme i spoustu dalších překvapení, které si zatím necháme pro sebe :)
+                Mimo to pro Vás chystáme i spoustu překvapení, které si zatím necháme pro sebe :)
               </p>
             </div>
           </div>
@@ -1333,7 +1376,7 @@ export default function WeddingPage() {
 
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
-              <form className="space-y-8">
+              <form className="space-y-8" onSubmit={handleSubmit}>
                 {/* Jména */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -1344,6 +1387,8 @@ export default function WeddingPage() {
                       type="text"
                       id="name"
                       name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-400 focus:border-transparent transition-all duration-200"
                       placeholder="Vaše jméno a příjmení"
@@ -1357,6 +1402,8 @@ export default function WeddingPage() {
                       type="text"
                       id="companion"
                       name="companion"
+                      value={formData.companion}
+                      onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-400 focus:border-transparent transition-all duration-200"
                       placeholder="Jméno a příjmení doprovodu"
                     />
@@ -1374,6 +1421,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="attendance"
                         value="ceremony"
+                        checked={formData.attendance === 'ceremony'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Obřadu</span>
@@ -1383,6 +1432,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="attendance"
                         value="reception"
+                        checked={formData.attendance === 'reception'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Hostiny</span>
@@ -1392,6 +1443,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="attendance"
                         value="party"
+                        checked={formData.attendance === 'party'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Večerní párty</span>
@@ -1401,6 +1454,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="attendance"
                         value="all"
+                        checked={formData.attendance === 'all'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Celé svatby</span>
@@ -1410,6 +1465,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="attendance"
                         value="none"
+                        checked={formData.attendance === 'none'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Vůbec se nezúčastním</span>
@@ -1428,6 +1485,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="children"
                         value="yes"
+                        checked={formData.children === 'yes'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Ano</span>
@@ -1437,6 +1496,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="children"
                         value="no"
+                        checked={formData.children === 'no'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Ne</span>
@@ -1455,6 +1516,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="accommodation"
                         value="yes"
+                        checked={formData.accommodation === 'yes'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Ano</span>
@@ -1464,6 +1527,8 @@ export default function WeddingPage() {
                         type="radio"
                         name="accommodation"
                         value="no"
+                        checked={formData.accommodation === 'no'}
+                        onChange={handleInputChange}
                         className="w-4 h-4 text-stone-600 border-stone-300 focus:ring-stone-400"
                       />
                       <span className="ml-3 text-stone-700">Ne</span>
@@ -1479,6 +1544,8 @@ export default function WeddingPage() {
                   <textarea
                     id="note"
                     name="note"
+                    value={formData.note}
+                    onChange={handleInputChange}
                     rows={4}
                     className="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-400 focus:border-transparent transition-all duration-200 resize-none"
                     placeholder="Pokud jste vegani, máte alergie nebo jakékoli speciální požadavky, napište nám to zde..."
@@ -1489,12 +1556,28 @@ export default function WeddingPage() {
                 <div className="text-center pt-6">
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-stone-800 hover:bg-stone-900 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    disabled={isSubmitting}
+                    className={`inline-flex items-center gap-3 px-8 py-4 font-medium rounded-xl transition-all duration-300 shadow-lg ${
+                      isSubmitting
+                        ? 'bg-stone-400 cursor-not-allowed'
+                        : 'bg-stone-800 hover:bg-stone-900 hover:shadow-xl transform hover:-translate-y-1'
+                    } text-white`}
                   >
                     <Heart className="w-5 h-5" />
-                    Potvrdit účast
+                    {isSubmitting ? 'Odesílám...' : 'Potvrdit účast'}
                   </button>
                 </div>
+
+                {/* Zpráva o výsledku */}
+                {submitMessage && (
+                  <div className={`text-center mt-6 p-4 rounded-xl ${
+                    submitMessage.includes('úspěšně')
+                      ? 'bg-green-50 text-green-800 border border-green-200'
+                      : 'bg-red-50 text-red-800 border border-red-200'
+                  }`}>
+                    {submitMessage}
+                  </div>
+                )}
               </form>
 
               {/* Poznámka pod formulářem */}
