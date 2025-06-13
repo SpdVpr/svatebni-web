@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   description: "Pozvánka na svatbu Anny a Michala, která se koná 24. ledna 2026 v Yard Resort, Předboj. Zimní svatba plná lásky a radosti.",
   keywords: "svatba, wedding, Anna, Michal, Yard Resort, Předboj, zimní svatba",
   authors: [{ name: "Anna & Michal" }],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', type: 'image/x-icon' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "Anna & Michal | Svatba 24.1.2026",
     description: "Pozvánka na naši svatbu 24.1.2026 v Yard Resort, Předboj",
