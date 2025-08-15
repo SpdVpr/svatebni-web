@@ -1079,7 +1079,7 @@ export default function WeddingPage() {
             <div className="text-center">
               <h4 className="text-lg font-light text-stone-900 mb-6">Tmavě modrá</h4>
               <div className="flex flex-col items-center gap-4">
-                <div className="w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1e3a8a' }}></div>
+                <div className="w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1e2a5e' }}></div>
                 <p className="text-sm text-stone-600">jako zimní obloha</p>
               </div>
             </div>
@@ -1088,7 +1088,7 @@ export default function WeddingPage() {
             <div className="text-center">
               <h4 className="text-lg font-light text-stone-900 mb-6">Tmavě zelená</h4>
               <div className="flex flex-col items-center gap-4">
-                <div className="w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1f4f3f' }}></div>
+                <div className="w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1a3d2e' }}></div>
                 <p className="text-sm text-stone-600">jako voňavé jehličí</p>
               </div>
             </div>
