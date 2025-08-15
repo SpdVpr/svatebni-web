@@ -1074,7 +1074,16 @@ export default function WeddingPage() {
           </div>
 
           {/* Barevná paleta */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            {/* Tmavě modrá */}
+            <div className="text-center">
+              <h4 className="text-lg font-light text-stone-900 mb-6">Tmavě modrá</h4>
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1e3a8a' }}></div>
+                <p className="text-sm text-stone-600">jako zimní obloha</p>
+              </div>
+            </div>
+
             {/* Tmavě zelená */}
             <div className="text-center">
               <h4 className="text-lg font-light text-stone-900 mb-6">Tmavě zelená</h4>
@@ -1132,6 +1141,55 @@ export default function WeddingPage() {
           {/* Galerie inspirace */}
           <div className="mb-16">
             <h3 className="text-2xl font-serif font-light text-stone-900 mb-8 text-center">Inspirace pro váš outfit</h3>
+
+            {/* Tmavě modrá inspirace */}
+            <div className="mb-12">
+              <h4 className="text-lg font-light text-stone-900 mb-6 text-center">Tmavě modrá</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tm1.jpg"
+                      alt="Tmavě modrá inspirace 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Elegantní tmavě modrá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tm2.jpg"
+                      alt="Tmavě modrá inspirace 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Formální tmavě modrá</p>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] relative">
+                    <Image
+                      src="/dress/tm3.jpg"
+                      alt="Tmavě modrá inspirace 3"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-sm font-semibold">Stylová tmavě modrá</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Tmavě zelená inspirace */}
             <div className="mb-12">
